@@ -37,9 +37,9 @@ public class RestClient { //q
 	
 	
 	private RequestSpecification setupRequest(String baseUrl, AuthType authType, ContentType contentType) {
-		ChainTestListener.log("API Base URL: "+baseUrl);   	//log
-		ChainTestListener.log("Auth Type: "+authType); 
-		ChainTestListener.log("Conent Type: "+contentType); 
+//		ChainTestListener.log("API Base URL: "+baseUrl);   	//log
+//		ChainTestListener.log("Auth Type: "+authType); 
+//		ChainTestListener.log("Conent Type: "+contentType); 
 		
 		RequestSpecification request = RestAssured.given().log().all()
 										.baseUri(baseUrl)
