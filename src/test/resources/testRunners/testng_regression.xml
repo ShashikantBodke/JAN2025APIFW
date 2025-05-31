@@ -12,25 +12,25 @@
 
 	<test name="Go Rest API Test - Get User">
 		<classes>
-			<class name="com.qa.api.gorest.tests.GetUserTest" />
+			<class name="com.qa.api.gorest.tests.GetUserTest"/>
 		</classes>
 	</test>
 
 	<test name="Go Rest API Test - Create User">
 		<classes>
-			<class name="com.qa.api.gorest.tests.CreateUserTest" />
+			<class name="com.qa.api.gorest.tests.CreateUserTest"/>
 		</classes>
 	</test>
 
 	<test name="Go Rest API Test - Update User">
 		<classes>
-			<class name="com.qa.api.gorest.tests.UpdateUserTest" />
+			<class name="com.qa.api.gorest.tests.UpdateUserTest"/>
 		</classes>
 	</test>
 
 	<test name="Go Rest API Test - Delete User">
 		<classes>
-			<class name="com.qa.api.gorest.tests.DeleteUserTest" />
+			<class name="com.qa.api.gorest.tests.DeleteUserTest"/>
 		</classes>
 	</test>
 	
@@ -42,57 +42,57 @@
 
 	<test name="Product API Test - Get Product">
 		<classes>
-			<class name="com.qa.api.products.tests.ProductAPITest" />
+			<class name="com.qa.api.products.tests.ProductAPITest"/>
 		</classes>
 	</test>
 
 	<test name="Product API Test - Get Product With Json Path">
 		<classes>
 			<class
-				name="com.qa.api.products.tests.ProductAPITestWithJsonPath" />
+				name="com.qa.api.products.tests.ProductAPITestWithJsonPath"/>
 		</classes>
 	</test>
 
 	<test name="Schema Test">
 		<classes>
-			<class name="com.qa.api.schema.tests.GoRestUserAPISchemaTest" />
+			<class name="com.qa.api.schema.tests.GoRestUserAPISchemaTest"/>
 		</classes>
 	</test>
 
 
 	<test name="Amadeus API Test">
 		<classes>
-			<class name="com.qa.api.amadeus.tests.AmadeusAPITest" />
+			<class name="com.qa.api.amadeus.tests.AmadeusAPITest"/>
 		</classes>
 	</test>
 
 	<test name="Basic Auth API Test">
 		<classes>
-			<class name="com.qa.api.basicauth.tests.BasicAuthTest" />
+			<class name="com.qa.api.basicauth.tests.BasicAuthTest"/>
 		</classes>
 	</test>
 	
 	<test name="Spotify API Test">
 		<classes>
-			<class name="com.qa.api.spotify.tests.SpotifyAPITest" />
+			<class name="com.qa.api.spotify.tests.SpotifyAPITest"/>
 		</classes>
 	</test>
 	
 	<test name="Reqres API Test">
 		<classes>
-			<class name="com.qa.api.reqres.tests.ReqResTest" />
+			<class name="com.qa.api.reqres.tests.ReqResTest"/>
 		</classes>
 	</test>
 	
 	<test name="Circuit API Test">
 		<classes>
-			<class name="com.qa.api.circuit.tests.CircuitAPIWithXMLTest" />
+			<class name="com.qa.api.circuit.tests.CircuitAPIWithXMLTest"/>
 		</classes>
 	</test>
 	
 	<test name="Contacts API Test">
 		<classes>
-			<class name="com.qa.api.contacts.tests.ContactsAPITest" />
+			<class name="com.qa.api.contacts.tests.ContactsAPITest"/>
 		</classes>
 	</test>
 
