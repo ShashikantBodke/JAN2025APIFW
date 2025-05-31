@@ -1,13 +1,11 @@
+
 allure-results/
-build/
 test-output/
-target/
+build/
 
-*.log
-
-########################
-##        JAVA        ##
-########################
+##############################
+## Java
+##############################
 .mtj.tmp/
 *.class
 *.jar
@@ -16,10 +14,9 @@ target/
 *.nar
 hs_err_pid*
 *.log
-
-########################
-##        MAVEN       ##
-########################
+##############################
+## Maven
+##############################
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -32,10 +29,18 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 .mvn/
-
-########################
-##        ECLIPSE     ##
-########################
+##############################
+## IntelliJ
+##############################
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+##############################
+## Eclipse
+##############################
 .settings/
 bin/
 tmp/
@@ -50,10 +55,6 @@ local.properties
 .loadpath
 .factorypath
 
-
-
-########################
-##        OS X        ##
-########################
+## OS X
+##############################
 .DS_Store
-
