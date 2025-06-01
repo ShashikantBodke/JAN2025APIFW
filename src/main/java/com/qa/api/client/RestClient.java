@@ -8,7 +8,7 @@ import java.io.File;
 import java.util.Map;
 import java.util.Base64;
 
-import com.aventstack.chaintest.plugins.ChainTestListener;
+//import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.qa.api.constants.AuthType;
 import com.qa.api.exceptions.APIException;
 import com.qa.api.manager.ConfigManager;
@@ -37,9 +37,9 @@ public class RestClient { //q
 	
 	
 	private RequestSpecification setupRequest(String baseUrl, AuthType authType, ContentType contentType) {
-		ChainTestListener.log("API Base URL: "+baseUrl);   	//log
-		ChainTestListener.log("Auth Type: "+authType); 
-		ChainTestListener.log("Conent Type: "+contentType); 
+//		ChainTestListener.log("API Base URL: "+baseUrl);   	//log
+//		ChainTestListener.log("Auth Type: "+authType); 
+//		ChainTestListener.log("Conent Type: "+contentType); 
 		
 		RequestSpecification request = RestAssured.given().log().all()
 										.baseUri(baseUrl)

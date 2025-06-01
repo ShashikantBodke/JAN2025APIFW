@@ -36,7 +36,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/ShashikantBodke/JAN2025APIFW.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_sanity.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_sanity.xml -Denv=dev"
                     
                 }
             }
@@ -56,7 +56,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/ShashikantBodke/JAN2025APIFW.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_regression.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_regression.xml -Denv=QA"
                     
                 }
             }
@@ -100,7 +100,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/ShashikantBodke/JAN2025APIFW.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_sanity.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_sanity.xml -Denv=stage"
                     
                 }
             }
@@ -130,7 +130,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/ShashikantBodke/JAN2025APIFW.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_sanity.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_sanity.xml -Denv=prod"
                     
                 }
             }
