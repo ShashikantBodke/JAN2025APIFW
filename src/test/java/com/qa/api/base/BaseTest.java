@@ -15,21 +15,14 @@ protected RestClient restClient;
 	
 	//********** API Base URLs*******//
 	protected static String BASE_URL_GOREST;
-	
-	
-	
-	
-	
-	
-	protected final static String BASE_URL_CONTACTS = "https://thinking-tester-contact-list.herokuapp.com";
-	protected final static String BASE_URL_REQRES = "https://reqres.in";
-	protected final static String BASE_URL_BASIC_AUTH ="https://the-internet.herokuapp.com"; 
-	protected final static String BASE_URL_PRODUCTS = "https://fakestoreapi.com"; 
-	protected final static String BASE_URL_OAUTH2_AMADEUS = "https://test.api.amadeus.com";
-	protected final static String BASE_URL_OAUTH2_SPOTIFY = "https://accounts.spotify.com";
-	protected final static String BASE_URL_ALBUMS_SPOTIFY = "https://api.spotify.com"; 
-	protected final static String BASE_URL_ERGAST_CIRCUIT = "http://ergast.com";
-	 
+	protected static String BASE_URL_CONTACTS;   
+	protected static String BASE_URL_REQRES;     
+	protected static String BASE_URL_BASIC_AUTH;    
+	protected static String BASE_URL_PRODUCTS;   
+	protected static String BASE_URL_OAUTH2_AMADEUS;
+	protected static String BASE_URL_OAUTH2_SPOTIFY;
+	protected static String BASE_URL_ALBUMS_SPOTIFY;
+	protected static String BASE_URL_ERGAST_CIRCUIT;	 
 		
 	//********** API EndPoints*******//
 	protected final static String GOREST_USERS_ENDPOINT = "/public/v2/users";
@@ -49,6 +42,14 @@ protected RestClient restClient;
 	public void initSetup() {
 		RestAssured.filters(new AllureRestAssured());
 		BASE_URL_GOREST= ConfigManager.get("baseurl.gorest").trim();
+		BASE_URL_CONTACTS= ConfigManager.get("baseurl.contacts").trim();
+		BASE_URL_REQRES= ConfigManager.get("baseurl.reqres").trim();
+		BASE_URL_BASIC_AUTH= ConfigManager.get("baseurl.basic_auth").trim();
+		BASE_URL_PRODUCTS= ConfigManager.get("baseurl.products").trim();
+		BASE_URL_OAUTH2_AMADEUS= ConfigManager.get("baseurl.oauth2_amadeus").trim();
+		BASE_URL_OAUTH2_SPOTIFY= ConfigManager.get("baseurl.oauth2_spotify").trim();
+		BASE_URL_ALBUMS_SPOTIFY= ConfigManager.get("baseurl.albums_spotify").trim();
+		BASE_URL_ERGAST_CIRCUIT= ConfigManager.get("baseurl.ergast_circuit").trim();
 	}
 	
 	
